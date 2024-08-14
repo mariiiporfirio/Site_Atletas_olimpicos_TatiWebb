@@ -1,0 +1,331 @@
+/* Importa a fonte Montserrat do Google Fonts com várias opções de estilo (itálico e pesos) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Define estilos básicos para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* Define o tamanho da fonte base para 10px (1rem = 10px) */
+  font-family: "Montserrat", sans-serif; /* Define a fonte padrão como Montserrat */
+  scroll-behavior: smooth; /* Habilita a rolagem suave em todo o documento */
+}
+
+body {
+  background-color: #3a84b6; /* Define a cor de fundo do corpo da página */
+  scroll-behavior: smooth; /* Garante a rolagem suave no corpo da página */
+}
+
+/* Estilos para o menu */
+.menu {
+  display: flex; /* Define o menu como um container flexível */
+  flex-direction: row; /* Define a direção dos itens do menu como horizontal */
+  flex: auto; /* Permite que o menu ocupe todo o espaço disponível */
+  list-style: none; /* Remove os marcadores de lista */
+  height: 8rem; /* Define a altura do menu */
+  font-size: 3rem; /* Define o tamanho da fonte do menu */
+  justify-content: space-evenly; /* Distribui os itens do menu uniformemente */
+  align-items: center; /* Centraliza os itens do menu verticalmente */
+  background-color: #0000007a; /* Define a cor de fundo do menu com transparência */
+  border: solid white 2px; /* Adiciona uma borda branca ao menu */
+  color: white; /* Define a cor do texto do menu como branca */
+  width: 95vw; /* Define a largura do menu como 95% da largura da viewport */
+  margin: auto; /* Centraliza o menu horizontalmente */
+  height: 75px; 
+  margin-top: 45px; 
+  margin-bottom: 35px; 
+  border-radius: 10px; /* Arredonda os cantos do menu */
+  transition: ease-in-out 0.7s; /* Adiciona uma transição suave às propriedades do menu */
+}
+
+/* Estilos para os itens do menu */
+.menu > li {
+  transition: ease-in-out 0.7s; /* Adiciona uma transição suave às propriedades dos itens do menu */
+}
+
+/* Estilos para os links dos itens do menu quando o mouse passa por cima */
+.menu > li > a:hover {
+  border-bottom: white solid 3px; /* Adiciona uma borda inferior branca ao link */
+  padding-bottom: 1.7rem; /* Adiciona um espaçamento inferior ao link */
+  transition: ease-in-out 0.2s; /* Adiciona uma transição suave às propriedades do link */
+  text-decoration: none; /* Remove a decoração de texto do link */
+  color: white; /* Define a cor do texto do link como branca */
+}
+
+/* Estilos para a imagem da bandeira do Brasil */
+.bandeira_brasileira{
+  display: flex; /* Define a imagem como um container flexível */
+  height: 9rem; /* Define a altura da imagem */ 
+}
+
+/* Estilos para links */
+a {
+  font-size: 2rem; /* Define o tamanho da fonte do link */
+  color: white; /* Define a cor do texto do link como branca */
+  text-decoration: none; /* Remove a decoração de texto do link */
+}
+
+/* Estilos para a logo */
+.logo {
+  height: 125px; /* Define a altura da logo */
+}
+
+/* Estilos para os itens do carrossel */
+.carousel-item {
+  height: 75vh; /* Define a altura do item do carrossel como 75% da altura da viewport */
+}
+
+/* Estilos para os links dentro dos itens do carrossel */
+.carousel-item > a {
+  text-align: none; /* Define o alinhamento do texto do link como nenhum */
+  color: white; /* Define a cor do texto do link como branca */
+}
+
+/* Estilos para o artigo da seção "História" */
+#historia_artigo{
+  font-size: 3rem; /* Define o tamanho da fonte do artigo */
+  background-color: white; /* Define a cor de fundo do artigo como branca */
+  color: #072c46; /* Define a cor do texto do artigo */
+  text-align: center; /* Define o alinhamento do texto do artigo como centralizado */
+  width: 60vw; /* Define a largura do artigo como 60% da largura da viewport */
+  padding: 5%; /* Adiciona um espaçamento interno ao artigo */
+  border-radius: 20px; /* Arredonda os cantos do artigo */
+  text-align: justify; /* Define o alinhamento do texto do artigo como justificado */
+}
+
+/* Estilos para o título do artigo da seção "História" */
+#historia_artigo>h1{
+  font-size: 4rem; /* Define o tamanho da fonte do título */
+  text-align: center; /* Define o alinhamento do texto do título como centralizado */
+}
+
+/* Estilos para formulários */
+form {
+  padding: 1rem; /* Adiciona um espaçamento interno ao formulário */
+  margin: auto; /* Centraliza o formulário horizontalmente */
+  font-size: 2rem; /* Define o tamanho da fonte do formulário */
+  background-color: white; /* Define a cor de fundo do formulário como branca */
+  width: 80vw; /* Define a largura do formulário como 80% da largura da viewport */
+  border-radius: 15px; /* Arredonda os cantos do formulário */
+  display: flex; /* Define o formulário como um container flexível */
+  flex-direction: column; /* Define a direção dos itens do formulário como vertical */
+  justify-content: space-between; /* Distribui os itens do formulário uniformemente */
+}
+
+/* Estilos para o rodapé da página */
+footer {
+  list-style-type: none; /* Remove os marcadores de lista */
+  width: 100%; /* Define a largura do rodapé como 100% */
+  background-color: rgba(0, 0, 0, 0.658); /* Define a cor de fundo do rodapé com transparência */
+  color: white; /* Define a cor do texto do rodapé como branca */
+  text-align: left; /* Define o alinhamento do texto do rodapé como à esquerda */
+  border-top: 0.3rem solid white; /* Adiciona uma borda superior branca ao rodapé */
+  padding: 1%; /* Adiciona um espaçamento interno ao rodapé */
+}
+
+/* Estilos para os links dentro do rodapé */
+footer > nav > ul > li > a {
+  color: white; /* Define a cor do texto do link como branca */
+  font-size: 1.2rem; /* Define o tamanho da fonte do link */
+  text-decoration: none; /* Remove a decoração de texto do link */
+  transition: ease-in-out 0.1s; /* Adiciona uma transição suave às propriedades do link */ 
+}
+
+/* Estilos para os itens de lista com a classe "traco" dentro do rodapé */
+footer > nav > ul > .traco{
+  border-right: 1px solid #ffffff; /* Adiciona uma borda direita branca ao item de lista */
+  padding: 0px 160px 0px 0px; /* Adiciona um espaçamento interno ao item de lista */
+  text-align: center; /* Define o alinhamento do texto do item de lista como centralizado */
+}
+
+/* Estilos para as imagens dentro dos itens de lista com a classe "traco" dentro do rodapé */
+footer > nav > ul > .traco > a > img{
+  height: 5rem; /* Define a altura da imagem */
+}
+
+/* Estilos para as imagens dentro dos links dentro do rodapé */
+footer > nav > ul > li > a > img{
+  height: 5rem; /* Define a altura da imagem */
+  transition: ease-in-out 0.3s; /* Adiciona uma transição suave às propriedades da imagem */
+}
+
+/* Estilos para a lista de links dentro do rodapé */
+footer > nav > ul{
+  display: flex; /* Define a lista como um container flexível */
+  flex-direction: row; /* Define a direção dos itens da lista como horizontal */
+  justify-content: space-evenly; /* Distribui os itens da lista uniformemente */
+  list-style-type: none; /* Remove os marcadores de lista */
+}
+
+/* Estilos para as imagens dentro dos links dentro do rodapé quando o mouse passa por cima */
+footer > nav > ul > li > a> img:hover {
+  text-decoration: none; /* Remove a decoração de texto do link */
+  color: white; /* Define a cor do texto do link como branca */
+  padding-bottom: .05rem; /* Adiciona um espaçamento inferior ao link */
+  height: 5.5rem; /* Define a altura da imagem */
+}
+
+/* Estilos para o container da seção "História" */
+.historia_elementos {
+  display: flex; /* Define o container como um container flexível */
+  padding: 5%; /* Adiciona um espaçamento interno ao container */
+  justify-content: space-evenly; /* Distribui os itens do container uniformemente */
+}
+
+/* Estilos para as imagens dentro da seção "Premiações" */
+.premiacoes > figure > img {
+  max-height: 15rem; /* Define a altura máxima da imagem */
+  margin: 10px 0px; /* Adiciona uma margem superior e inferior à imagem */
+  transform: translate(20%); /* Move a imagem horizontalmente em 20% */
+}
+
+/* Estilos para a seção "Premiações" */
+.premiacoes {
+  display: flex; /* Define a seção como um container flexível */
+  flex-direction: column; /* Define a direção dos itens da seção como vertical */
+  justify-content: space-evenly; /* Distribui os itens da seção uniformemente */
+}
+
+/* Estilos para o título da seção "Premiações" */
+.premiacoes > h2 {
+  text-align: center; /* Define o alinhamento do texto do título como centralizado */
+  font-size: 4rem; /* Define o tamanho da fonte do título */
+  color: white; /* Define a cor do texto do título como branca */
+  text-shadow: #072c46 2px 2px 2px; /* Adiciona uma sombra ao texto do título */
+}
+
+/* Estilos para os itens da seção "Premiações" */
+.premiacoes > figure {
+  background-color: white; /* Define a cor de fundo do item como branca */
+  padding: 10px; /* Adiciona um espaçamento interno ao item */
+  border-radius: 20px; /* Arredonda os cantos do item */
+}
+
+/* Estilos para os subtítulos dentro da seção "Premiações" */
+.premiacoes > figure > h3 {
+  text-align: center; /* Define o alinhamento do texto do subtítulo como centralizado */
+}
+
+/* Estilos para a seção "Formulário" */
+.formulario {
+  height: 80vh; /* Define a altura da seção como 80% da altura da viewport */
+  width: 70vw; /* Define a largura da seção como 70% da largura da viewport */
+  margin-bottom: 4rem; /* Adiciona uma margem inferior à seção */
+  font-size: 4rem; /* Define o tamanho da fonte da seção */
+  font-weight: bold; /* Define o peso da fonte da seção como negrito */
+  padding: 5%; /* Adiciona um espaçamento interno à seção */
+}
+
+/* Estilos para o campo de texto do formulário */
+.campo_texto {
+  height: 75px; /* Define a altura do campo de texto */
+}
+
+/* Estilos para o container dos botões do formulário */
+.botoes {
+  display: flex; /* Define o container como um container flexível */
+  flex-direction: row-reverse; /* Define a direção dos itens do container como horizontal e invertida */
+  gap: 1rem; /* Define o espaçamento entre os itens do container */
+  margin: 1rem; /* Adiciona uma margem ao container */
+}
+
+/* Estilos para os botões "Limpar" e "Enviar" do formulário */
+.botao_limpar, .botao_enviar {
+  width: 100px; /* Define a largura dos botões */
+  font-size: 1.5rem; /* Define o tamanho da fonte dos botões */
+  margin-bottom: 10px; /* Adiciona uma margem inferior aos botões */
+  background-color: #072c46; /* Define a cor de fundo dos botões */
+  color: white; /* Define a cor do texto dos botões como branca */
+  padding: 5px; /* Adiciona um espaçamento interno aos botões */
+  border-radius: 10px; /* Arredonda os cantos dos botões */
+}
+
+/* Estilos para os campos de nome, telefone, email e texto do formulário */
+.campo_nome, .campo_telefone, .campo_email, .campo_texto {
+  width: 100%; /* Define a largura dos campos como 100% */
+}
+
+/* Estilos para telas com largura máxima de 998px (media query) */
+@media(max-width:998px){
+  /* Estilos para a seção "Premiações" */
+  .premiacoes {
+    flex-direction: row; /* Define a direção dos itens da seção como horizontal */
+    justify-content: space-between; /* Distribui os itens da seção uniformemente */
+    gap: 1rem; /* Define o espaçamento entre os itens da seção */
+  }
+
+  /* Estilos para o container da seção "História" */
+  .historia_elementos{
+    flex-direction: column; /* Define a direção dos itens do container como vertical */
+  }
+
+  /* Estilos para o artigo da seção "História" */
+  #historia_artigo{
+    margin: auto; /* Centraliza o artigo horizontalmente */
+    width: 80vw; /* Define a largura do artigo como 80% da largura da viewport */
+  }
+ 
+  /* Estilos para as imagens dentro da seção "Premiações" */
+  .premiacoes > figure > img {
+    width: 15vw; /* Define a largura da imagem como 15% da largura da viewport */
+    transform: translate(40%); /* Move a imagem horizontalmente em 40% */
+  }
+
+  /* Estilos para os itens da seção "Premiações" */
+  .premiacoes > figure{
+    width: 30vw; /* Define a largura do item como 30% da largura da viewport */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0; /* Remove o espaçamento interno do item */
+    margin-top: 2rem; /* Adiciona uma margem superior ao item */
+  }
+
+  /* Esconde o título da seção "Premiações" */
+  .premiacoes>h2{
+    display: none; 
+  }
+
+  /* Estilos para os itens de lista com a classe "traco" dentro do rodapé */
+  footer > nav > ul > .traco{
+    border: none; /* Remove a borda do item de lista */
+    margin: 1rem 0; /* Adiciona uma margem superior e inferior ao item de lista */
+    padding:0; /* Remove o espaçamento interno do item de lista */
+  }
+
+  /* Estilos para os itens de lista dentro do rodapé */
+  footer > nav > ul > li{
+    margin: 1rem 0; /* Adiciona uma margem superior e inferior ao item de lista */
+  }
+
+  /* Remove a borda inferior dos links do menu quando o mouse passa por cima */
+  .menu > li > a:hover {
+    border-bottom: none;
+  }
+
+  /* Estilos para o título do artigo da seção "História" */
+  #historia_artigo > h1{
+    font-size: 3.2rem; /* Define o tamanho da fonte do título */
+    flex-wrap: nowrap; /* Impede que o título seja quebrado em várias linhas */
+  }
+
+  /* Estilos para a seção "Formulário" */
+  .formulario {
+    width: 75%; /* Define a largura da seção como 75% */
+    padding: 20px; /* Adiciona um espaçamento interno à seção */
+  }
+  
+  /* Estilos para o botão "Anexo" do formulário */
+  .botao_anexo {
+    font-size: 1.3rem; /* Define o tamanho da fonte do botão */
+  }
+  
+  /* Estilos para os botões "Limpar" e "Enviar" do formulário */
+  .botao_limpar, .botao_enviar {
+    width: 100px; /* Define a largura dos botões */
+    font-size: 1.5rem; /* Define o tamanho da fonte dos botões */
+  }
+
+  /* Estilos para o título da seção "Formulário" */
+  .formulario > h1 {
+    font-size: 2rem; /* Define o tamanho da fonte do título */
+    text-align: center; /* Define o alinhamento do texto do título como centralizado */
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define a linguagem do documento como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade em dispositivos móveis -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" /> <!-- Importa a fonte de ícones "Material Symbols Outlined" -->
+    <link rel="stylesheet" href="./estilos/style.css"> <!-- Importa seu arquivo CSS externo -->
+    <title>Contato</title> <!-- Define o título da página que aparece na aba do navegador -->
+</head>
+
+<body>
+    <header> <!-- Define o cabeçalho da página -->
+        <ul class="menu" style="justify-content: space-evenly;"> <!-- Cria uma lista não ordenada para o menu, com espaçamento uniforme entre os itens -->
+            <li><a href="index.html"><img class="bandeira_brasileira" src="icons/brasil.png" alt="bandeira_brasileira"></a></li> <!-- Cria um item de lista com link para a página inicial e imagem da bandeira do Brasil -->
+            <li></li> <!-- Cria um item de lista vazio para espaçamento -->
+            <li><a href="index.html">Inicio</a></li> <!-- Cria um item de lista com link para a página inicial -->
+        </ul>
+    </header>
+
+    <main> <!-- Define o conteúdo principal da página -->
+        <form class="formulario" action="registro.php" method="GET"> <!-- Cria um formulário que envia os dados para o arquivo "registro.php" usando o método GET -->
+
+            <h1 class="chamada">Estamos em busca de parceiros que compartilhem nossa paixão pelo surfe e queiram nos apoiar.</h1> <!-- Título principal do formulário -->
+
+            <div> <!-- Cria um container para o campo "Nome" -->
+                <label for="nome">Nome:</label> <!-- Rótulo para o campo "Nome", associado ao campo pelo atributo `for` -->
+                <input class="campo_nome" type="text" id="nome" name="nome" required /> <!-- Campo de texto para o nome, com os atributos `id` e `name` definidos, e definido como obrigatório -->
+            </div>
+
+            <div> <!-- Cria um container para o campo "Telefone" -->
+                <label for="telefone">Telefone:</label> <!-- Rótulo para o campo "Telefone", associado ao campo pelo atributo `for` -->
+                <input class="campo_telefone" type="text" id="telefone" name="phone" required /> <!-- Campo de texto para o telefone, com os atributos `id` e `name` definidos, e definido como obrigatório -->
+            </div>
+
+            <div> <!-- Cria um container para o campo "E-mail" -->
+                <label for="emailinserido">Insira o seu e-mail:</label><br> <!-- Rótulo para o campo "E-mail", associado ao campo pelo atributo `for` -->
+                <input class="campo_email" type="email" id="emailinserido" name="emailinserido" required> <!-- Campo de texto para o e-mail, com os atributos `id` e `name` definidos, e definido como obrigatório -->
+            </div>
+
+            <div> <!-- Cria um container para o campo "Mensagem" -->
+                <label for="feedback">Escreva uma mensagem:</label> <!-- Rótulo para o campo "Mensagem", associado ao campo pelo atributo `for` -->
+                <textarea class="campo_texto" id="feedback" name="feedback"></textarea> <!-- Área de texto para a mensagem, com os atributos `id` e `name` definidos -->
+            </div>
+
+            <div> <!-- Cria um container para o campo "Proposta" (upload de arquivo) -->
+                <label for="arquivo">Envie a sua proposta:</label> <!-- Rótulo para o campo "Proposta", associado ao campo pelo atributo `for` -->
+                <input class="botao_anexo" type="file" id="arquivo" name="arquivo"> <!-- Campo de upload de arquivo, com os atributos `id` e `name` definidos -->
+            </div>
+
+            <div class="botoes"> <!-- Container para os botões do formulário -->
+                <input class="botao_limpar" type="reset" value="Limpar" /> <!-- Botão para limpar os campos do formulário -->
+                <input class="botao_enviar" type="submit" value="Enviar" /> <!-- Botão para enviar os dados do formulário -->
+            </div>
+
+        </form> 
+    </main>
+
+    <footer> <!-- Define o rodapé da página -->
+        <nav> <!-- Define uma seção de navegação -->
+            <ul> <!-- Cria uma lista não ordenada para os links das redes sociais -->
+                <li class="traco"><a href="https://m.facebook.com/tatianawestonwebbsurf" target="_blank"><img src="icons/facebook.png" alt="ícone do Facebook"></a></li> <!-- Cria um item de lista com link para a página do Facebook, com ícone e texto alternativo para a imagem -->
+                <li class="traco"><a href="https://www.instagram.com/tatiwest?igsh=YXVmbG51OTZoMWhs" target="_blank"><img src="icons/instagram.png" alt="ícone do Instagram"></a></li> <!-- Cria um item de lista com link para a página do Instagram, com ícone e texto alternativo para a imagem -->
+                <li class="traco"><a href="https://www.tiktok.com/@tatiwest9?lang=pt-BR&is_from_webapp=1&sender_device=mobile&sender_web_id=7400399276185142789" target="_blank"><img src="icons/tiktok.png" alt="ícone do TikTok"></a></li> <!-- Cria um item de lista com link para a página do TikTok, com ícone e texto alternativo para a imagem -->
+                <li><a href="https://x.com/tatiwest?s=21&t=yPCIa761bU-Zq44lFiUPwA" target="_blank"><img src="icons/twitter.png" alt="ícone do Twitter"></a></li> <!-- Cria um item de lista com link para a página do Twitter, com ícone e texto alternativo para a imagem -->
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
