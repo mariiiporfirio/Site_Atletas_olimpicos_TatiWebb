@@ -64,11 +64,6 @@ a {
   text-decoration: none; /* Remove a decoração de texto do link */
 }
 
-/* Estilos para a logo */
-.logo {
-  height: 125px; /* Define a altura da logo */
-}
-
 /* Estilos para os itens do carrossel */
 .carousel-item {
   height: 75vh; /* Define a altura do item do carrossel como 75% da altura da viewport */
