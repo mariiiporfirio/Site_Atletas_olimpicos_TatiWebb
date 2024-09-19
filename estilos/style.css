@@ -64,11 +64,6 @@ a {
   text-decoration: none; /* Remove a decoração de texto do link */
 }
 
-/* Estilos para a logo */
-.logo {
-  height: 125px; /* Define a altura da logo */
-}
-
 /* Estilos para os itens do carrossel */
 .carousel-item {
   height: 75vh; /* Define a altura do item do carrossel como 75% da altura da viewport */
@@ -208,7 +203,7 @@ footer > nav > ul > li > a> img:hover {
 /* Estilos para a seção "Formulário" */
 .formulario {
   height: 80vh; /* Define a altura da seção como 80% da altura da viewport */
-  width: 70vw; /* Define a largura da seção como 70% da largura da viewport */
+  width: 35vw; /* Define a largura da seção como 70% da largura da viewport */
   margin-bottom: 4rem; /* Adiciona uma margem inferior à seção */
   font-size: 4rem; /* Define o tamanho da fonte da seção */
   font-weight: bold; /* Define o peso da fonte da seção como negrito */
